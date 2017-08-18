@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dating website</title>
+<meta name="author" content="Anup Kumar">
+<style>
+fieldset { background:lightyellow; margin-bottom:10px; width:720px }
+fieldset { border: 10px solid yellow }
+form {
+    border: 9px solid #f1f1f1;
+}
+#dwebsite label {
+   
+    width:180px;
+    display:inline-block;
+	 text-align:right;
+	 text-align:bottom;
+	}
+	textarea { width:360px; heigh:50px;
+	}
+label:hover { font-size:20px }
+input:hover { font-size:20px }
+</style>
+</head>
+<body>
+<h1>Please Enter Your Details For Our Dating Website!</h1>
+<form id="dwebsite" enctype="multipart/form-data">
+<fieldset>
+<legend>Your face</legend>
+<label for="img">Your Image:</label>
+<input type="file" id="img" name="filetoupload">
+</fieldset>
+<br>
+<fieldset>
+<legend>Your General Details</legend>
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" cols="60" placeholder="Enter Your fucking Full Name here"><br>
+
+<label for="gender">Gender:</label>
+<input type="radio" id="gender" name="gender" value="male">Male
+<input type="radio" id="gender" name="gender" value="Female">Female<br>
+<label for="age">Age:</label>
+<input type="number" min="15" max="115" id="age" name"age" step="1" value="15" required><br>
+<label for="bday">Date of birth:</label>
+<input type="date" id="bday" name="bday"><br>
+<label for="color">Favorite Color:</label>
+<input type="color" id="color" name="color"><br>
+<label for="cities">Which Country:</label>
+<select name="cities" id="cities">
+<option value="ind">INDIA</option>
+<option value="amk">USA</option>
+<option value="nep">NEPAL</option>
+<option value="rus">RUSSIA</option>
+</select>
+</fieldset><br>
+<fieldset>
+<legend>Your Indicators</legend>
+<label for="height">Height:Short</label>
+<input type="range" id="height" name="height" min="4" max="8" step="0.5">Tall<br>
+<label for="salary">Salary:Poor</label>
+<input type="range" id="salary" name="salary" min="10000" max="90000" step="5000">Rich<br>
+</fieldset><br>
+<fieldset>
+<legend>Your Contact Information</legend>
+<label for="email">Email:</label>
+<input type="email" id="email" name"email"><br>
+<label for="address">Address:</label>
+<textarea  id="address" name="address" placeholder="Enter your address">
+</textarea><br>
+<label for="contact">Method to contact you:</label>
+<input type="checkbox" id="contact" name="contact" value="email">Email
+<input type="checkbox" id="contact" name="contact" value="whatsapp">Whatsapp
+<input type="checkbox" id="contact" name="contact" value="in-appchat">In-app chat
+</fieldset>
+<input type="submit" value="submit">
+</form>
+</body>
+</html>
